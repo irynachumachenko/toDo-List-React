@@ -1,0 +1,47 @@
+@import '@/styles/variables.scss';
+
+.todo-item {
+  display: flex;
+  align-items: center;
+
+  &__input {
+    flex: 1;
+    margin: 0 20px 0 0;
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    color: inherit;
+
+    &:focus {
+      outline: none;
+      color: $primary;
+      border-bottom: 1px solid $primary;
+    }
+  }
+
+  .todo-item {
+    &__remove,
+    &__edit {
+      min-width: 40px;
+      border-radius: 50%;
+    }
+
+    &__remove,
+    &__remove-icon {
+      color: $error;
+    }
+
+    &__edit,
+    &__edit-icon {
+      color: $primary;
+    }
+  }
+
+  &.is-checked {
+    color: $success;
+
+    .todo-item__input {
+      text-decoration: line-through;
+    }
+  }
+}

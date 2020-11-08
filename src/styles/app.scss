@@ -1,0 +1,44 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.app {
+  max-width: 540px;
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+  }
+}
+
+.prime-title {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.todo-info {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 20px;
+
+
+  .todo-info__btn {
+    margin-top: auto;
+  }
+}

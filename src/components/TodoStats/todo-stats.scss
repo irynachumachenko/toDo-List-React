@@ -1,0 +1,29 @@
+@import '@/styles/variables.scss';
+
+.todo-stats {
+  left: 50px;
+
+  &__field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 8px;
+    border: 1px solid $disable;
+    &:nth-child(3) {
+      border-top: none;
+    }
+  }
+
+  &__value {
+    font-weight: 500;
+    color: $primary;
+  }
+
+  &__label {
+    font-size: 14px;
+  }
+
+  .todo-stats__btn {
+    color: $error;
+  }
+}

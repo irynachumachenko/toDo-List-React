@@ -1,0 +1,39 @@
+@import "@/styles/variables.scss";
+
+.todo-progress {
+  right: 50px;
+  text-align: center;
+  min-width: 200px;
+}
+
+.todo-progressbar {
+  display: inline-block;
+  margin: 0 auto 10px auto;
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+  color: $primary;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid #e0e0e0;
+    box-sizing: border-box;
+    z-index: -1;
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    &.is-completed {
+      color: $success;
+    }
+  }
+}

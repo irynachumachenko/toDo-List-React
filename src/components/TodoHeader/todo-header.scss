@@ -1,0 +1,13 @@
+.todo-form {
+  display: flex;
+  align-items: flex-end;
+
+  .todo-form__input {
+    margin: 0 20px 0 0;
+    flex: 1;
+  }
+
+  .todo-form__submit {
+    font-size: 12px;
+  }
+}
